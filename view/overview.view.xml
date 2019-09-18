@@ -1,0 +1,12 @@
+<mvc:View
+  controllerName="todo.controller.App"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc">
+  <Page
+    showHeader="false">
+    <content>
+			<mvc:XMLView viewName="todo.view.todo"/>
+    </content>
+  </Page>
+
+</mvc:View>

@@ -1,0 +1,21 @@
+<core:FragmentDefinition
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core"
+  xmlns:html="http://www.w3.org/1999/xhtml">
+  <Dialog
+      id="taskDialog"
+      title="change dialog"
+      contentHeight="123px"
+      escapeHandler="">
+      <endButton>
+        <Button
+          text="exit"
+          type="Emphasized"
+          press=".onCloseDialog"/>
+      </endButton>
+      <Input
+        value="{task}"
+        valueLiveUpdate="true"
+        autocomplete="true"/>
+  </Dialog>
+</core:FragmentDefinition>

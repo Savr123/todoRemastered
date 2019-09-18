@@ -1,0 +1,38 @@
+<mvc:View
+  controllerName="todo.controller.todo"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc">
+  <Panel
+    headerText="Project">
+    <content>
+			<FeedInput
+			post="onPost"
+			class="sapUiSmallMarginTopBottom" />
+			<List
+				showSeparators="Inner"
+				items="{
+          path: '/EntryCollection',
+          sorter:{
+            descending: true,
+            path: 'status',
+            group: true
+          }
+        }"
+        growing="true"
+        growingThreshold="10">
+				<NotificationListItem
+							title="{task}"
+							showCloseButton="true"
+							datetime="{path: 'DateCreation', formatter: '.formatDate'}"
+							close="onItemClose"
+							press="onListItemPress"
+              priority="{path: 'status', formatter: '.formatStatus'}">
+						<buttons>
+							<Button text="done" type="Accept" press="onDone"/>
+							<Button text="failed" type="Reject" press="onFailed"/>
+						</buttons>
+				</NotificationListItem>
+			</List>
+		</content>
+  </Panel>
+</mvc:View>

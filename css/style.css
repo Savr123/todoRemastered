@@ -1,0 +1,29 @@
+.customRed{
+  background-color: #ef0000;
+  background: linear-gradient(#ef0000,#fff)!important;
+}
+/* .sapMNLB-Priority{
+    background-color: #ef0000;
+} */
+.customGreen{
+  background-color: #1aef00;
+  background: linear-gradient(#1aef00, #fff) !important;
+}
+li:hover{
+  height: 14vh;
+  font-size: 1.5em!important;
+  margin-top: -4px!important;
+  margin-bottom: 4px!important;
+}
+li:hover div.sapMNLI-Header{
+  margin: 1% 0 !important;
+}
+li:hover div.sapMNLI-Body{
+  margin: 1% 0 !important;
+}
+html{
+  overflow-y:hidden;;
+}
+.sapMShellCentralBox{
+  height: 99%!important;
+}
