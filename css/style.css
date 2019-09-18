@@ -9,16 +9,21 @@
   background-color: #1aef00;
   background: linear-gradient(#1aef00, #fff) !important;
 }
-li:hover{
+li.sapMLIB {
+  font-size: 1.2em!important;
+}
+li.sapMNLI-LSize:hover{
   height: 14vh;
-  font-size: 1.5em!important;
   margin-top: -4px!important;
   margin-bottom: 4px!important;
 }
-li:hover div.sapMNLI-Header{
+li.sapMNLI-LSize:hover div.sapMNLI-Header{
   margin: 1% 0 !important;
 }
-li:hover div.sapMNLI-Body{
+li.sapMNLI-LSize:hover span {
+  font-size: 1.03em!important;
+}
+li.sapMNLI-LSize:hover div.sapMNLI-Body{
   margin: 1% 0 !important;
 }
 html{
