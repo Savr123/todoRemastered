@@ -2,8 +2,10 @@
   controllerName="todo.controller.App"
   xmlns = "sap.m"
   xmlns:mvc = "sap.ui.core.mvc">
+  
   <Shell>
     <App class="myAppDemoWT" id="app">
+
     </App>
   </Shell>
 </mvc:View>

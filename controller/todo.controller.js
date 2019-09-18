@@ -125,12 +125,17 @@ sap.ui.define([
 			//----------------------------------------------
 			//-----------------OpenDialog-------------------
 			//----------------------------------------------
-				var oControl = event.getSource();
-
-				if (this.oEditDialog) {
-					this.oEditDialog.bindElement({path: oControl.getBindingContext().getPath() });
-					this.oEditDialog.open();
-				}
+				// var oControl = event.getSource();
+				//
+				// if (this.oEditDialog) {
+				// 	this.oEditDialog.bindElement({path: oControl.getBindingContext().getPath() });
+				// 	this.oEditDialog.open();
+				// }
+				var oItem = event.getSource();
+				var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+				oRouter.navTo("detail", {
+					taskPath: oItem.getBindingContext().getPath().substr(17)
+				});
 		},
 
 		onItemClose: function(event){

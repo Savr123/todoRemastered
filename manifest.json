@@ -46,6 +46,7 @@
     		"settings": {
     		  "bundleName": "todo.i18n.i18n"
     		}
+
   	  }
   	},
   	"routing": {
@@ -65,7 +66,7 @@
   		  "target": "overview"
   		},
   		{
-        "pattern": "detail/{invoicePath}",
+        "pattern": "detail/{taskPath}",
   		  "name": "detail",
   		  "target": "detail"
   		}
